@@ -131,10 +131,10 @@ associate_with_private_ip = "10.0.1.10"
 
 #Creating an ubuntu EC2 instance
 resource "aws_instance" "Prod-Server" {
- ami = "ami-0f58b397bc5c1f2e8"
- instance_type = "t2.micro"
+ ami = "ami-0ad21ae1d0696ad58"
+ instance_type = "t2.medium"
  availability_zone = "ap-south-1b"
- key_name = "koko"
+ key_name = "tomcat-test"
  network_interface {
     network_interface_id = aws_network_interface.proj-ni.id
     device_index         = 0
